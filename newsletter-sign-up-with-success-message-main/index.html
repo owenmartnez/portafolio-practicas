@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body id="body">
+    <div class="container">
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <div class="modal-content-image">
+            <img
+              src="assets/images/icon-success.svg"
+              alt="Success Icon"
+              class="modal-content-image-icon"
+            />
+          </div>
+          <div class="modal-content-text">
+            <h1>Thanks for subscribing!</h1>
+            <div class="modal-content-text-info">
+              A confirmation email has been sent to
+              <p id="email-confirmation"></p>
+              Please open it and click the button inside to confirm your
+              subscription.
+            </div>
+            <button id="dismis-message">Dismis message</button>
+          </div>
+        </div>
+      </div>
+      <div class="form-container" id="form-container">
+        <div class="form">
+          <div class="form-title">
+            <h1>Stay updated!</h1>
+          </div>
+          <div class="form-content">
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <div class="form-content-list">
+              <p>
+                <img src="assets/images/icon-success.svg" alt="" />
+                Product discovery and building what matter
+              </p>
+              <p>
+                <img src="assets/images/icon-success.svg" alt="" />
+                Measuring to ensure updates area a success
+              </p>
+              <p>
+                <img src="assets/images/icon-success.svg" alt="" />
+                And much more!
+              </p>
+            </div>
+            <div class="form-labels">
+              <label for="email">Email address</label>
+              <p id="errror-message">Valid email required</p>
+            </div>
+            <form action="" method="post" id="form-login">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="email@company.com"
+              />
+              <button type="submit">Subscribe to monthly newsletter</button>
+            </form>
+          </div>
+        </div>
+        <div class="form-image">
+          <img
+            src="assets/images/illustration-sign-up-mobile.svg"
+            alt="Image Sign up"
+            class="image-mobile"
+          />
+          <img
+            src="assets/images/illustration-sign-up-desktop.svg"
+            alt="Image Sign up"
+            class="image-desktop"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
