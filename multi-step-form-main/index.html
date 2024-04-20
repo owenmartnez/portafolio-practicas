@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Multi-step form</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-image-mobile counts-steps">
+        <span class="count-step-mobile active">1</span>
+        <span class="count-step-mobile">2</span>
+        <span class="count-step-mobile">3</span>
+        <span class="count-step-mobile">4</span>
+      </div>
+      <div class="form-container">
+        <div class="form-image">
+          <div class="count">
+            <span class="count-step active">1</span>
+            <div class="count-text">
+              <h2>STEP 1</h2>
+              <p>Your info</p>
+            </div>
+          </div>
+          <div class="count">
+            <span class="count-step">2</span>
+            <div class="count-text">
+              <h2>STEP 2</h2>
+              <p>Select plan</p>
+            </div>
+          </div>
+          <div class="count">
+            <span class="count-step">3</span>
+            <div class="count-text">
+              <h2>STEP 3</h2>
+              <p>Add-ons</p>
+            </div>
+          </div>
+          <div class="count">
+            <span class="count-step">4</span>
+            <div class="count-text">
+              <h2>STEP 4</h2>
+              <p>Summary</p>
+            </div>
+          </div>
+        </div>
+        <div class="form">
+          <div id="form-step-1" class="active">
+            <div class="form-header">
+              <h1>Personal info</h1>
+              <p>Please provide your name, email address, and phone number.</p>
+            </div>
+            <form action="#" method="POST" id="form-personal-info">
+              <div class="form-group">
+                <div class="form-labels">
+                  <label for="name">Name</label>
+                  <span id="message-name"></span>
+                </div>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Willian Arévalo"
+                />
+              </div>
+              <div class="form-group">
+                <div class="form-labels">
+                  <label for="email">Email Address</label>
+                  <span id="message-email"></span>
+                </div>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@company.com"
+                />
+              </div>
+              <div class="form-group">
+                <div class="form-labels">
+                  <label for="phone">Phone Number</label>
+                  <span id="message-phone"></span>
+                </div>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+503 7545 6642"
+                />
+              </div>
+            </form>
+          </div>
+          <div id="form-step-2">
+            <div class="form-header">
+              <h1>Select your plan</h1>
+              <p>You have the option of monthly or yearly billing.</p>
+            </div>
+            <div class="plans">
+              <div class="plan">
+                <img src="assets/images/icon-arcade.svg" alt="Icon arcade" />
+                <h2 class="plan-title">Arcade</h2>
+                <p class="prices-plans price-month active">$9/mo</p>
+                <p class="prices-plans price-year">$90/yr</p>
+                <small class="offert-year">2 months free</small>
+              </div>
+              <div class="plan">
+                <img
+                  src="assets/images/icon-advanced.svg"
+                  alt="Icon advanced"
+                />
+                <h2>Advanced</h2>
+                <p class="prices-plans price-month active">$12/mo</p>
+                <p class="prices-plans price-year">$120/yr</p>
+                <small class="offert-year">2 months free</small>
+              </div>
+              <div class="plan">
+                <img src="assets/images/icon-pro.svg" alt="Icon pro" />
+                <h2>Pro</h2>
+                <p class="prices-plans price-month active">$15/mo</p>
+                <p class="prices-plans price-year">$150/yr</p>
+                <small class="offert-year">2 months free</small>
+              </div>
+            </div>
+            <div class="date">
+              <div class="toggle-container">
+                <p id="plan-month" class="time active">Monthly</p>
+                <div class="toggle-switch">
+                  <input type="checkbox" id="toggle" class="toggle-input" />
+                  <label for="toggle" class="toggle-label"></label>
+                </div>
+                <p id="plan-year" class="time">Yearly</p>
+              </div>
+            </div>
+            <div class="message-container">
+              <span id="message-plan"></span>
+            </div>
+          </div>
+          <div id="form-step-3">
+            <div class="form-header">
+              <h1>Pick add-ons</h1>
+              <p>Add-ons help enhance your gaming experience.</p>
+            </div>
+            <div class="check-list">
+              <div class="check-item">
+                <input type="checkbox" class="input-check" />
+                <div class="check-text">
+                  <h3>Online service</h3>
+                  <p>Access to multiplayer games</p>
+                </div>
+                <p class="check-price monthly active">+$1/mo</p>
+                <p class="check-price yearly">+$10/yr</p>
+              </div>
+              <div class="check-item">
+                <input type="checkbox" class="input-check" />
+                <div class="check-text">
+                  <h3>Large storage</h3>
+                  <p>Extra 1TB of cloud save</p>
+                </div>
+                <p class="check-price monthly active">+$2/mo</p>
+                <p class="check-price yearly">+$20/yr</p>
+              </div>
+              <div class="check-item">
+                <input type="checkbox" class="input-check" />
+                <div class="check-text">
+                  <h3>Customizable Profile</h3>
+                  <p>Custom them on your profile</p>
+                </div>
+                <p class="check-price monthly active">+$2/mo</p>
+                <p class="check-price yearly">+$20/yr</p>
+              </div>
+            </div>
+          </div>
+          <div id="form-step-4">
+            <div class="form-header">
+              <h1>Finishing up</h1>
+              <p>Double-check everything looks OK before confirming.</p>
+            </div>
+            <div class="finish">
+              <div class="finish-header">
+                <div>
+                  <h4 id="chosen-plan">Arcade (Monthly)</h4>
+                  <button id="btn-change-plan">Change</button>
+                </div>
+                <p id="chosen-plan-price">$9/mo</p>
+              </div>
+              <div class="finish-body" id="finish-body"></div>
+              <div class="finish-footer">
+                <p id="total-text">Total (per month)</p>
+                <h3 id="total-price">+$12/mo</h3>
+              </div>
+            </div>
+          </div>
+          <div id="form-step-5">
+            <div class="success">
+              <img src="assets/images/icon-thank-you.svg" alt="Icon check" />
+              <h2>Thank you!</h2>
+              <p>
+                Thanks you for confirming your subscription! We hope you have
+                fun using our plataform. If you ever need support, please feel
+                free to email us at support@loreaming.com.
+              </p>
+            </div>
+          </div>
+          <div class="form-buttons">
+            <button type="button" class="btn-prev">Previous Step</button>
+            <button type="button" class="btn-next">Next Step</button>
+          </div>
+        </div>
+      </div>
+      <div class="buttons-container-mobile">
+        <button type="button" class="btn-prev">Previous Step</button>
+        <button type="button" class="btn-next">Next Step</button>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
