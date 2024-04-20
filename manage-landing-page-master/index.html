@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Manage landing page</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/icons-fontawesome/css/all.min.css" />
+    <script
+      src="https://kit.fontawesome.com/be49cbc3fc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="body" id="body">
+    <header>
+      <nav class="nav" id="nav">
+        <div class="logo">
+          <img src="assets/images/logo.svg" alt="Manage logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+        <a href="#" class="cta">Get Started</a>
+        <button class="button-hamburger" id="button-hamburger">
+          <img
+            src="assets/images/icon-hamburger.svg"
+            alt="Icon hamburger"
+            id="icon-hamburger"
+          />
+          <img
+            src="assets/images/icon-close.svg"
+            alt="Icon close"
+            id="icon-close"
+            class="hidden"
+          />
+        </button>
+      </nav>
+      <nav class="nav-mobile" id="nav-mobile">
+        <ul class="nav-links-mobile">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+        <a href="#" class="cta">Get Started</a>
+      </nav>
+    </header>
+    <main>
+      <div id="overlay"></div>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Bring everyone together to build better products.</h1>
+          <p>
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <a class="cta" href="#">Get Started</a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/images/illustration-intro.svg" alt="Illustration" />
+        </div>
+      </section>
+      <section class="features">
+        <div class="feature-one">
+          <h2>What's different about Manage?</h2>
+          <p>
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
+        <div class="feature-two">
+          <div class="feature">
+            <div class="feadure-head">
+              <span>01</span>
+              <h3>Track company-wide progress</h3>
+            </div>
+            <p>
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feadure-head">
+              <span>02</span>
+              <h3>Advanced built-in reports</h3>
+            </div>
+            <p>
+              Set internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feadure-head">
+              <span>03</span>
+              <h3>Everything you need in one place</h3>
+            </div>
+            <p>
+              Stop jumping from one service to another to communicate, store
+              files, track tasks and share documents. Manage offers an
+              all-in-one team productivity solution.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="testiomanials-head">
+          <h2>What they've said</h2>
+        </div>
+        <div class="testimoials-body">
+          <div class="testimony">
+            <div class="testimony-image">
+              <img src="assets/images/avatar-anisha.png" alt="Anisha" />
+            </div>
+            <div class="testimony-content">
+              <h3>Anisha Li</h3>
+              <p>
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+          </div>
+          <div class="testimony">
+            <div class="testimony-image">
+              <img src="assets/images/avatar-ali.png" alt="Ali" />
+            </div>
+            <div class="testimony-content">
+              <h3>Ali Bravo</h3>
+              <p>
+                “We have been able to increase our productivy by over 50%.
+                Manage is a tool that has helped us grow our team and build
+                better products.”
+              </p>
+            </div>
+          </div>
+          <div class="testimony">
+            <div class="testimony-image">
+              <img src="assets/images/avatar-richard.png" alt="Richard" />
+            </div>
+            <div class="testimony-content">
+              <h3>Richard Watts</h3>
+              <p>
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-carousel">
+          <div class="testimony carousel active">
+            <div class="testimony-image">
+              <img src="assets/images/avatar-anisha.png" alt="Anisha" />
+            </div>
+            <div class="testimony-content">
+              <h3>Anisha Li</h3>
+              <p>
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+          </div>
+          <div class="testimony carousel">
+            <div class="testimony-image">
+              <img src="assets/images/avatar-ali.png" alt="Ali" />
+            </div>
+            <div class="testimony-content">
+              <h3>Ali Bravo</h3>
+              <p>
+                “We have been able to increase our productivy by over 50%.
+                Manage is a tool that has helped us grow our team and build
+                better products.”
+              </p>
+            </div>
+          </div>
+          <div class="testimony carousel">
+            <div class="testimony-image">
+              <img src="assets/images/avatar-richard.png" alt="Richard" />
+            </div>
+            <div class="testimony-content">
+              <h3>Richard Watts</h3>
+              <p>
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </div>
+          </div>
+          <div class="carousel-pagination"></div>
+        </div>
+        <div class="testimonials-footer">
+          <a href="#" class="cta">Get Started</a>
+        </div>
+      </section>
+      <section class="hero-footer">
+        <div class="hero-background-image-1">
+          <img src="assets/images/bg-table-pattern-hero.svg" alt="" />
+        </div>
+        <div class="hero-background-image-2">
+          <img src="assets/images/bg-table-pattern-hero.svg" alt="" />
+        </div>
+        <div class="hero-footer-content">
+          <h2>Simplify how your team works today.</h2>
+          <a href="#" class="cta">Get Started</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo-networks">
+          <div class="logo">
+            <img src="assets/images/logo-white.svg" alt="Manage logo" />
+          </div>
+          <div class="networks">
+            <a href="#" title="Link icon Facebook">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#" title="Link icon Youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" title="Link icon Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" title="Link icon Pinterest">
+              <i class="fab fa-pinterest"></i>
+            </a>
+            <a href="#" title="Link icon Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-nav">
+          <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Pricing</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+          </div>
+          <div class="footer-nav">
+            <a href="#">Careers</a>
+            <a href="#">Community</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-form-copy">
+          <form action="#" id="form-email">
+            <input
+              type="email"
+              id="email"
+              placeholder="Updates in your inbox..."
+            />
+            <button type="submit">Go</button>
+          </form>
+          <small id="message"></small>
+          <p>&copy; 2024 Manage. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
