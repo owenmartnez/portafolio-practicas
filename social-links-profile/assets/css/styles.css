@@ -1,0 +1,143 @@
+:root {
+  --gren: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --of-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+
+body {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--of-black);
+}
+
+.card-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--dark-grey);
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.card-profile__img {
+  margin-block: 20px;
+}
+
+.card-profile img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.card-profile .card-profile__info {
+  text-align: center;
+}
+
+.card-profile .card-profile__info h1 {
+  color: var(--white);
+  font-size: 25px;
+}
+
+.card-profile .card-profile__info p {
+  color: var(--gren);
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.card-profile__links {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-inline: 20px;
+  padding-bottom: 20px;
+}
+
+.card-profile__links p {
+  color: var(--white);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card-profile__links a {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: var(--white);
+  text-decoration: none;
+  background-color: var(--grey);
+  font-weight: bold;
+}
+
+.card-profile__links a:hover {
+  background-color: var(--gren);
+  color: var(--grey);
+}
+
+@media (max-width: 465px) {
+  .card-profile {
+    width: 330px;
+  }
+
+  .card-profile__links {
+    padding-inline: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-profile {
+    width: 300px;
+  }
+
+  .card-profile img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-profile__info h1 {
+    font-size: 20px;
+  }
+
+  .card-profile__info p {
+    font-size: 12px;
+  }
+
+  .card-profile__links p {
+    font-size: 12px;
+  }
+
+  .card-profile__links a {
+    padding: 15px;
+  }
+}
